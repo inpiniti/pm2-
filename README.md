@@ -42,6 +42,16 @@ pm2 start ecosystem.config.js
     ```
     pm2 stop mobius
     ```
+5. pm2 app name
+    ```
+    pm2 start app.js -n newName
+    ```
+    ```
+    pm2 restart id --name newName
+    ``` 
+    app.js 로 실행시키면, 동작중인 프로그램이 잘 구분가지 않아서
+    (app 또는 index 로 지정되어 있기 때문)
+    찾아보니 변경하는 방법이 있었음
 
 # 기타
 
